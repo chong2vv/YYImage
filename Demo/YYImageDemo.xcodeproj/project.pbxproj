@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99C7C421B47B6095C1F2DF5C /* Pods_YYImageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF785959E5838BCF24C9417 /* Pods_YYImageDemo.framework */; };
 		D91A60311F057230008CD5D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A60301F057230008CD5D3 /* AppDelegate.m */; };
 		D91A60341F057230008CD5D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A60331F057230008CD5D3 /* ViewController.m */; };
 		D91A60371F057230008CD5D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91A60351F057230008CD5D3 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9AF785959E5838BCF24C9417 /* Pods_YYImageDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYImageDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91A602C1F057230008CD5D3 /* YYImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91A602F1F057230008CD5D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = YYImageDemo/AppDelegate.h; sourceTree = "<group>"; };
 		D91A60301F057230008CD5D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = YYImageDemo/AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +102,8 @@
 		D9D17EDD1F05756400051419 /* YYImageExampleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageExampleHelper.m; sourceTree = "<group>"; };
 		D9D17EDE1F05756400051419 /* YYImageProgressiveExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageProgressiveExample.h; sourceTree = "<group>"; };
 		D9D17EDF1F05756400051419 /* YYImageProgressiveExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageProgressiveExample.m; sourceTree = "<group>"; };
+		F701B6A9B9DD8C34C4F38D32 /* Pods-YYImageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYImageDemo.release.xcconfig"; path = "Target Support Files/Pods-YYImageDemo/Pods-YYImageDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F80194E15959B269612CB0FC /* Pods-YYImageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYImageDemo.debug.xcconfig"; path = "Target Support Files/Pods-YYImageDemo/Pods-YYImageDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +113,23 @@
 			files = (
 				D97F409D1F05741000DFD481 /* libz.tbd in Frameworks */,
 				D97F409A1F05740B00DFD481 /* WebP.framework in Frameworks */,
+				99C7C421B47B6095C1F2DF5C /* Pods_YYImageDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14337D9469E32DDFB3885746 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F80194E15959B269612CB0FC /* Pods-YYImageDemo.debug.xcconfig */,
+				F701B6A9B9DD8C34C4F38D32 /* Pods-YYImageDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D91A60231F057230008CD5D3 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +139,7 @@
 				D97F40881F0573C400DFD481 /* Supporting Files */,
 				D91A602D1F057230008CD5D3 /* Products */,
 				D97F409B1F05741000DFD481 /* Frameworks */,
+				14337D9469E32DDFB3885746 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +207,7 @@
 			children = (
 				D97F40991F05740B00DFD481 /* WebP.framework */,
 				D97F409C1F05741000DFD481 /* libz.tbd */,
+				9AF785959E5838BCF24C9417 /* Pods_YYImageDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -252,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D91A60421F057230008CD5D3 /* Build configuration list for PBXNativeTarget "YYImageDemo" */;
 			buildPhases = (
+				3057A3422CCE17517615A183 /* [CP] Check Pods Manifest.lock */,
 				D91A60281F057230008CD5D3 /* Sources */,
 				D91A60291F057230008CD5D3 /* Frameworks */,
 				D91A602A1F057230008CD5D3 /* Resources */,
+				40DFBD15EEF5FA11EF4E4D29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,6 +342,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3057A3422CCE17517615A183 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YYImageDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40DFBD15EEF5FA11EF4E4D29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YYImageDemo/Pods-YYImageDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YYImageDemo/Pods-YYImageDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D91A60281F057230008CD5D3 /* Sources */ = {
@@ -477,6 +541,7 @@
 		};
 		D91A60431F057230008CD5D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F80194E15959B269612CB0FC /* Pods-YYImageDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Vendor\"";
@@ -490,6 +555,7 @@
 		};
 		D91A60441F057230008CD5D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F701B6A9B9DD8C34C4F38D32 /* Pods-YYImageDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Vendor\"";

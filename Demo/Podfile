@@ -2,7 +2,7 @@ platform :ios, '12.0'
 
 use_frameworks!
 target 'YYImageDemo' do
-pod 'YYImage', :path => '../../YYImage'
+pod 'YYImage', :path => '../../YYImage', :subspecs => ['Core', 'WebP']
 end
 
 post_install do |installer|

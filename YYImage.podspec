@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   
   s.subspec 'WebP' do |webp|
     webp.dependency 'YYImage/Core'
-    webp.dependency 'libwebp'
+    webp.dependency 'libwebp', '~> 1.5.0'
   end
 end
