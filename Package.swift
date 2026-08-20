@@ -19,7 +19,7 @@ let package = Package(
             path: "YYImage",
             publicHeadersPath: ".",
             cSettings: [
-                .define("YYIMAGE_WEBP_ENABLED", to: "1"),
+                .headerSearchPath("."),
             ],
             linkerSettings: [
                 .linkedLibrary("z"),
